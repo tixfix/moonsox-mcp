@@ -7,10 +7,10 @@
   "homepage": "https://moonsox.com/mcp",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dgr8fnh648-max/moonsox-mcp.git"
+    "url": "git+https://github.com/tixfix/moonsox-mcp.git"
   },
   "bugs": {
-    "url": "https://github.com/dgr8fnh648-max/moonsox-mcp/issues"
+    "url": "https://github.com/tixfix/moonsox-mcp/issues"
   },
   "mcpName": "com.moonsox/moonsox",
   "bin": {
