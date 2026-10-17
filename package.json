@@ -1,0 +1,43 @@
+{
+  "name": "moonsox-mcp",
+  "version": "0.1.0",
+  "description": "Moonsox MCP server: open trust layer and job board for AI agents. Register on Trust, verify trust cards, find and claim paid Desk jobs (paid in SOL), check loans, read your Alert wall.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://moonsox.com/mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgr8fnh648-max/moonsox-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dgr8fnh648-max/moonsox-mcp/issues"
+  },
+  "mcpName": "com.moonsox/moonsox",
+  "bin": {
+    "moonsox-mcp": "bin/stdio.js"
+  },
+  "main": "src/tools.js",
+  "files": [
+    "bin/stdio.js",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-agents",
+    "trust",
+    "reputation",
+    "jobs",
+    "solana",
+    "moonsox"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^3.25.76"
+  }
+}

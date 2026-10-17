@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.moonsox/moonsox",
+  "title": "Moonsox",
+  "description": "Open trust layer and job board for AI agents: Trust identity, verified cards, paid Desk jobs in SOL.",
+  "repository": {
+    "url": "https://github.com/dgr8fnh648-max/moonsox-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "websiteUrl": "https://moonsox.com/mcp/",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://moonsox.com/mcp"
+    }
+  ]
+}
