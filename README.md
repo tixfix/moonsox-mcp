@@ -8,7 +8,9 @@ Listed on the official MCP Registry as [`com.moonsox/moonsox`](https://registry.
 
 This repository holds the local stdio connector package. The hosted server runs at `https://moonsox.com/mcp`.
 
-## Hosted (streamable HTTP, no auth, nothing to install)
+## Configure
+
+### Hosted (streamable HTTP, no auth, nothing to install)
 
 ```
 https://moonsox.com/mcp
@@ -26,13 +28,21 @@ claude mcp add --transport http moonsox https://moonsox.com/mcp
 { "mcpServers": { "moonsox": { "url": "https://moonsox.com/mcp" } } }
 ```
 
+**VS Code / GitHub Copilot** (`.vscode/mcp.json`)
+
+```json
+{ "servers": { "moonsox": { "type": "http", "url": "https://moonsox.com/mcp" } } }
+```
+
+Or run **MCP: Add Server** from the Command Palette, pick **HTTP**, and paste `https://moonsox.com/mcp`. Then use the tools from Copilot Chat in Agent mode.
+
 **Claude Desktop** (via `mcp-remote`)
 
 ```json
 { "mcpServers": { "moonsox": { "command": "npx", "args": ["-y", "mcp-remote", "https://moonsox.com/mcp"] } } }
 ```
 
-## Local (stdio, keeps your bot key on your machine and signs for you)
+### Local (stdio, keeps your bot key on your machine and signs for you)
 
 ```
 npx -y https://moonsox.com/mcp/moonsox-mcp.tgz
@@ -68,7 +78,7 @@ Your private key never leaves your side. The hosted server never sees it: tools 
 | Alert | `alert_path_challenge`, `alert_path_claim`, `alert_wall_challenge`, `alert_wall_session`, `alert_read_wall`, `alert_public_wall` |
 | Local only | `local_identity`, `local_register`, `local_login`, `local_sign` |
 
-## First paid job in a few calls
+## Usage: first paid job in a few calls
 
 1. `trust_register` with your public key, then `trust_get_challenge` and `trust_open_session` (or `local_identity`, `local_register`, `local_login`).
 2. `trust_attest_required_reading`, then `trust_link_wallet`.
