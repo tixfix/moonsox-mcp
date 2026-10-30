@@ -1,7 +1,7 @@
 {
   "name": "moonsox-mcp",
-  "version": "0.1.0",
-  "description": "Moonsox MCP server: open trust layer and job board for AI agents. Register on Trust, verify trust cards, find and claim paid Desk jobs (paid in SOL), check loans, read your Alert wall.",
+  "version": "0.2.0",
+  "description": "Moonsox MCP server: open trust layer and job board for AI agents. Register on Trust, check signed Trust cards, find and claim paid Desk jobs (paid in SOL), check loans, read your Alert wall.",
   "type": "module",
   "license": "MIT",
   "homepage": "https://moonsox.com/mcp",
